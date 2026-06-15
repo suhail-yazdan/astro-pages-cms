@@ -1,0 +1,30 @@
+media:
+  input: public/uploads
+  output: /uploads
+
+content:
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: src/content/blog
+
+    fields:
+      - name: title
+        label: Title
+        type: string
+
+      - name: description
+        label: Description
+        type: string
+
+      - name: pubDate
+        label: Publish Date
+        type: date
+
+      - name: image
+        label: Featured Image
+        type: image
+
+      - name: body
+        label: Content
+        type: rich-text
